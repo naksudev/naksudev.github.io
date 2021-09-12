@@ -1,7 +1,8 @@
 # naksudev.github.io
 Site web créé en classe par un élève de 1SIOB
 
-# Pense-bête
+# Template
+
 
 ```html
 <!doctype html>
@@ -9,8 +10,6 @@ Site web créé en classe par un élève de 1SIOB
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
   ...
