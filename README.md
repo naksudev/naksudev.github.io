@@ -1,4 +1,5 @@
-# naksudev.github.io - Site web créé en classe
+# naksudev.github.io
+Site web créé en classe par un élève de 1SIOB
 
 # Pense-bête
 
