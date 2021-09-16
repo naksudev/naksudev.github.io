@@ -10,6 +10,12 @@ li
     list-style-type: none;
 }
 
+p 
+{
+    color: white;
+    -webkit-text-stroke: 0.09px black;
+}
+
 .button 
 {
     border: none;
