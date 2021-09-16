@@ -8,14 +8,14 @@ https://naksudev.github.io/
 <!doctype html>
 <html lang="fr">
   <head>
-      <meta charset="utf-8">
-      <link href="styles/style.css" rel="stylesheet" type="text/css">
-      <title>Titre de la page</title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Titre de la page</title>
   </head>
   <body>
-      ...
-      <!-- Le reste du contenu -->
-      ...
+    ...
+    <!-- Le reste du contenu -->
+    ...
   </body>
 </html>
 ```
