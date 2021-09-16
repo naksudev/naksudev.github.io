@@ -51,3 +51,27 @@ border-radius: 4px;
 background-color: #008CBA;
 color: white;
 }
+
+.button3
+{
+background-color: white; 
+color: black; 
+border: 2px solid black;
+border-radius: 4px;
+}
+
+.button3:hover
+{
+background-color: black;
+color: white;
+}
+
+footer
+{
+    
+    position: fixed;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
