@@ -13,7 +13,6 @@ li
 p 
 {
     color: white;
-    cursor: default;
 }
 
 .button 
@@ -76,7 +75,24 @@ footer
 {
     position: fixed;
     left: 50%;
-    bottom: -10px;
+    bottom: 10px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
 }
+
+video#background
+{
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    /* background: url(polina.jpg) no-repeat; */
+    background-size: cover;
+}
+
+.turtle
+{
+    position: fixed;
+    left: 48%;
+    bottom: 28px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
