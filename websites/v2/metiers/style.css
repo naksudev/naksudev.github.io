@@ -1,0 +1,36 @@
+body 
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sidenav
+{
+    height: 100%;
+    width: 24%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.sidenav a 
+{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover
+{
+    background-color: aliceblue;
+}
+
+.main 
+{
+    margin-left: 24%;
+    padding: 0px 10px;
+}
