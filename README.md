@@ -9,7 +9,7 @@ https://naksudev.github.io/
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="<name>.css" rel="stylesheet" type="text/css">
     <title>Titre de la page</title>
   </head>
   <body>
