@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>naksudev - Accueil</title>
-    <link href="./style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
-<body>
-    <h1>naksudev.github.io</h1>
+	<body>        
+        <header>
+            <nav>
+                <label for="menu-mobile" class="menu-mobile">Menu</label>
+                <input type="checkbox" id="menu-mobile" role="button">
+                    
+                <ul>
+                    <li class="menu-title"><a href="#"><strong>naksudev.github.io</strong></a></li>
+                    <li class="menu-html"><a href="#" class="nolink">En cours</a>
+                        <ul class="submenu">
+                            <li><a href="./websites/metiers/index.html">Métiers informatiques</a></li>
+                            <li><a href="./websites/form/index.html">Formulaire</a></li>
+                            <li><a href="./websites/iframe/index.html">IFrame</a></li>
+                            <li><a href="./websites/articles/index.html">Articles</a></li>
+                            <li><a href="./websites/tableau/index.html">Tableau CSS</a></li>
+                            <li><a href="./websites/tableauv2/index.html">Tableau CSS V2</a></li>
+                            <li><a href="./websites/cv/index.html">CV</a></li>
+                            <li class="lastitem"><a href="#">Menu CSS Responsive</a></li>
+                        </ul>
+                    </li>
 
-    <br>
+                    <li class="menu-css"><a href="#" class="nolink">Hors cours</a>
+                        <ul class="submenu">
+                            <li class="lastitem"><a href="./websites/v2/metiers/index.html">Métiers informatiques</a></li>
+                        </ul>
+                    </li>
 
-    <h4>En cours</h4>
-    <a href="./websites/metiers/index.html"><button class="button button1">Métiers informatique</button></a>
-    <a href="./websites/form/index.html"><button class="button button2">Formulaire</button></a>
-    <a href="./websites/iframe/index.html"><button class="button button1">IFrame</button></a>
-    <a href="./websites/articles/index.html"><button class="button button2">Articles</button></a>
-    <a href="./websites/tableau/index.html"><button class="button button1">Tableau CSS</button></a>
-    <a href="./websites/tableauv2/index.html"><button class="button button2">Tableau CSS V2</button></a>
-    <a href="./websites/cv/index.html"><button class="button button1">CV</button></a>
-    <a href="./websites/menu_responsive/index.html"><button class="button button2">Menu CSS Responsive</button></a>
+                    <li class="menu-source"><a href="#">GitHub <i style="font-size:18px" class="fa">&#xf09b;</i></a></li>
+                    <li class="menu-magic"><a href="#">Magic button</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h4>Hors cours</h4>
-    <a href="./websites/v2/metiers/index.html"><button class="button button4">Métiers informatique</button></a>
-
-
-    <a href="https://www.youtube.com/watch?v=Q6KryRIcZHY"><img src="./assets/turtle.png" class="turtle" alt="turtle" height="100" width="100" ></a>
-
-    <footer>
-        <a href="https://github.com/naksudev/naksudev.github.io">
-            <button class="button button3">
-                <i style="font-size:18px" class="fa">&#xf09b;</i> &nbsp; Code Source
-            </button>
-        </a>
-    </footer>
-</body>
+        <div>Bienvenue !</div>
+	</body>
 </html>

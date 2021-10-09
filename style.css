@@ -1,101 +1,224 @@
-/* Body */
 body
 {
-    font-size: 25px;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #101820FF;
+	font-family: Verdana, Calibbri, sans-serif;
+	margin: 0px;
+	padding: 15px;
+}
+
+nav
+{
+	width: 100%;
+	background-color: #F2AA4CFF;
+    border-radius: 10px;
+}
+
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after
+{ 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav li 
+{
+	list-style-type: none;
+}
+
+nav > ul > li 
+{
+	float: left;
+	position: relative;
+}
+
+nav a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a
+{
+	padding: 20px;
+	color: #101820FF;
+}
+
+nav > ul > li:hover a 
+{
+	padding: 20px 20px 20px 20px;
+}
+
+/* Menus */
+.menu-magic, .menu-source
+{
+    float: right;
+}
+
+.menu-title:hover a
+{
     color: white;
-    background-color: black;    
 }
 
-/* Buttons */
-.button 
+.menu-html:hover .nolink
 {
-    border: none;
+	background-color: #101820FF;
+	transition-duration: 0.3s;
+    color: #F2AA4CFF;
+    cursor: default;
+}
+
+.menu-css:hover .nolink
+{
+	background-color: #101820FF;
+	transition-duration: 0.3s;
+    color: #F2AA4CFF;
+    cursor: default;
+}
+
+.menu-magic:hover a
+{
+	background-color: #101820FF;
+	transition-duration: 0.3s;
+    color: #F2AA4CFF;
+}
+
+.menu-source:hover a
+{
+    background-color: rgba(255, 255, 255, 0.9);
+	transition-duration: 0.1s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Sous-Menus */
+.menu-html .submenu
+{
+	background-color: rgb(35, 52, 70);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-css .submenu
+{
+    background-color: rgb(35, 52, 70);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-html .submenu li:hover
+{
+	background-color: rgb(24, 35, 48);
+}
+
+.menu-css .submenu li:hover
+{
+	background-color: rgb(24, 35, 48);
+}
+
+.submenu li a 
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #FFF;
+	width: 270px;
+}
+
+li:hover .lastitem 
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.submenu
+{
+	display: none;
+}
+
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+/* Mobile */
+.menu-mobile
+{
+	display: none;
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+	display: block;
+}
+
+@media screen and (max-width: 680px)
+{
+	.menu-mobile
+	{
+		display: block;
+		color: #fff;
+		background-color: rgba(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+
+	nav ul 
+	{
+		display: none;
+	}
+
+	nav ul li, nav ul li a 
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul li a, nav ul li:hover a 
+	{
+		padding: 10px 0px 10px 0px;
+	}
+
+	nav li:hover .submenu
+	{
+		display: block;
+		position: static;
+	}
+}
+
+div
+{
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.2s;
-    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
-/* Buttons V1 */
-.button1 
+@keyframes fadeInAnimation
 {
-background-color: black; 
-color: white; 
-border: 2px solid #4CAF50;
-border-radius: 4px;
-}
-
-.button1:hover 
-{
-background-color: #4CAF50;
-color: white;
-}
-
-.button2
-{
-background-color: black; 
-color: white; 
-border: 2px solid #008CBA;
-border-radius: 4px;
-}
-
-.button2:hover
-{
-background-color: #008CBA;
-color: white;
-}
-
-.button3
-{
-background-color: black; 
-color: white; 
-border: 2px solid white;
-border-radius: 4px;
-}
-
-.button3:hover
-{
-background-color: white;
-color: black;
-}
-
-/* Buttons V2 */
-.button4
-{
-background-color: black; 
-color: white; 
-border: 2px solid rgb(10, 255, 153);
-border-radius: 4px;
-}
-
-.button4:hover
-{
-background-color: rgb(10, 255, 153);
-color: black;
-}
-
-/* Footer */
-footer
-{
-    position: fixed;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-}
-
-.turtle
-{
-    position: fixed;
-    left: 48%;
-    bottom: 26px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
