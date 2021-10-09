@@ -172,7 +172,7 @@ nav input[type=checkbox]:checked ~ ul
 	{
 		display: block;
 		color: #fff;
-		background-color: rgba(29, 197, 151, 0.97);
+		background-color: rgb(218, 153, 68);
 		text-align: center;
 		padding: 12px 0;
 	}
