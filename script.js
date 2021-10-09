@@ -1,7 +1,7 @@
 function initElement()
 {
     var magic = document.getElementById("magicbutton");
-    var se = new Audio('boom.mp3');
+    var se = new Audio('boom.mp3');                                                                     
 
     magic.onclick = playSound;
 
@@ -10,4 +10,3 @@ function initElement()
         se.play();
     }
 }
-
