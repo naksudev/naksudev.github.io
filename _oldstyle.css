@@ -1,0 +1,101 @@
+/* Body */
+body
+{
+    font-size: 25px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: black;    
+}
+
+/* Buttons */
+.button 
+{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+/* Buttons V1 */
+.button1 
+{
+background-color: black; 
+color: white; 
+border: 2px solid #4CAF50;
+border-radius: 4px;
+}
+
+.button1:hover 
+{
+background-color: #4CAF50;
+color: white;
+}
+
+.button2
+{
+background-color: black; 
+color: white; 
+border: 2px solid #008CBA;
+border-radius: 4px;
+}
+
+.button2:hover
+{
+background-color: #008CBA;
+color: white;
+}
+
+.button3
+{
+background-color: black; 
+color: white; 
+border: 2px solid white;
+border-radius: 4px;
+}
+
+.button3:hover
+{
+background-color: white;
+color: black;
+}
+
+/* Buttons V2 */
+.button4
+{
+background-color: black; 
+color: white; 
+border: 2px solid rgb(10, 255, 153);
+border-radius: 4px;
+}
+
+.button4:hover
+{
+background-color: rgb(10, 255, 153);
+color: black;
+}
+
+/* Footer */
+footer
+{
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.turtle
+{
+    position: fixed;
+    left: 48%;
+    bottom: 26px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
