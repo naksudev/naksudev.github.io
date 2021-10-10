@@ -217,10 +217,10 @@ div
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 8em;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3vmax;
+    font-size: 2vmax;
     text-align: center;
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
