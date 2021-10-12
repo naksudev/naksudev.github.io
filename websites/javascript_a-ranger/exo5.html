@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var couleur = String(prompt("Entrez une couleur (Rouge ou Bleu)"));
+	
+		if (couleur === 'rouge') {
+			document.bgColor = "red";
+		} 
+		else if (couleur === 'bleu') {
+			document.bgColor = "blue";
+		} 
+		else {
+			document.bgColor = "white";
+			alert("Couleur non comprise.")
+		}
+
+		// Utiliser switch
+		switch(couleur) {
+			case 'rouge':
+				document.bgColor = "red";
+			case 'bleu':
+		}
+	</script>
+</body>
+</html>
