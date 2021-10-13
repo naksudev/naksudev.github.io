@@ -238,3 +238,25 @@ div
         opacity: 1;
     }
 }
+
+.fa-html5
+{
+    color: #ff5733;
+}
+
+.fa-css3-alt
+{
+    color: #338dff;
+}
+
+.fa-js-square
+{
+    color: rgb(255, 187, 0);
+}
+
+.fab
+{
+    float: right;
+    margin-left: 8px;
+    margin-top: 1px;
+}
