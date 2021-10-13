@@ -63,6 +63,7 @@ nav > ul > li:hover a
 .menu-title:hover a
 {
     color: white;
+    transition-duration: 0.3s;
 }
 
 .menu-html:hover .nolink
