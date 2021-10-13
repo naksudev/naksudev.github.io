@@ -1,0 +1,73 @@
+code
+{
+	background-color: #6dc785;
+	color: white;
+	font-size: 2em;
+	font-family: 'Arial';
+	text-align: center;
+	display: block;
+	border-radius: 8px;
+	border: 2px solid #409958;
+}
+
+section
+{	
+	float: left;
+	width: 30%;
+	height: 400px;
+	border: 2px solid black;
+	border-radius: 6px;
+	display: block;
+	text-align: center;
+	padding: 16px 15px 5%;
+	display: block;
+}
+
+.cpp {
+	color: #abd1ff;
+	background-color: #253242;
+}
+
+#cpp-title {
+	border: 2px solid #407099;
+	background-color: #6fa6d6;
+}
+
+.cs {
+	color: white;
+	background-color: #226e2f;
+}
+
+#cs-title {
+	border: 2px solid #69ffa2;
+	background-color: #42c976;
+}
+
+.c {
+	color: #c3d8e8;
+	background-color: #878787;
+}
+
+#c-title {
+	border: 2px solid #89afd9;
+	background-color: #4b5f75;
+}
+
+header, section, footer {
+	margin: 0 0.5% 24px 0.9%;
+	text-align: center;
+}
+
+footer {
+	clear: both;
+}
+
+p {	
+	font-size: 22px;
+	text-justify: auto;
+	margin: 10% 30px auto 1px;
+}
+
+img {
+	filter: drop-shadow(4px 6px 8px black);
+}

@@ -1,0 +1,40 @@
+h1
+{
+	font-family: 'Arial';
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	margin: 24px
+}
+
+table
+{
+	border: 5px solid #551a82;
+	width: 60%;
+	margin: auto;
+	background-color: #b18acf;
+}
+
+tr 
+{
+	height: 35px;
+}
+
+th
+{
+	font-family: 'Verdana';
+	font-size: 1em;
+	border: 2px solid black;
+	color: white;
+	background-image: url('background_table.jpg');
+}
+
+td
+{
+	background-color: white;
+	font-size: 0.90em;
+	text-align: center;
+	border: 1px solid #cbb1de;
+	padding: 8px;
+	font-family: cursive;
+}

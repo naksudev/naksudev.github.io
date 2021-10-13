@@ -1,0 +1,63 @@
+body
+{
+	background-color: rgb(15, 147, 150);
+	font-size: 18px;
+	font-family: monospace;
+}
+
+#t1 
+{
+	color: blue;
+}
+
+#t2
+{
+	color: red;
+}
+
+.p1 
+{
+	color: lightblue;
+	font-size: 22px;
+	border: solid 3px;
+	text-align: center;
+}
+
+.p2 {
+	color: magenta;
+	text-align: center;
+	border: groove 4px;
+	border-color: black;
+	background-color: white;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ul 
+{
+	color: pink;
+}
+
+a:link 
+{
+	color: red;
+}
+
+a:visited
+{
+	color: white;
+}
+
+a:hover
+{
+	color: purple;
+}
+
+a:clicked
+{
+	color: purple;	
+}
+
+
