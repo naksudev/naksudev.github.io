@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../../assets/fonts/RobotoSlab-VariableFont_wght.ttf") format("woff2");
+}
+
+body
+{
+    color: white;
+	padding: 1em;
+    font-family: "Roboto Slab";
+}
+
+h1
+{
+    margin: auto;
+	text-align: left;
+}
+
+p 
+{
+    margin-top: 2px;
+    margin-left: 6px;
+}
