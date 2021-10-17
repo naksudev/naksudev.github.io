@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Faïz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="favicon.ico"/>        
+        <script src="https://kit.fontawesome.com/9fde1af100.js" crossorigin="anonymous"></script>      
+    </head>
+	<body onload="initElement();">
+        <header>
+            <nav>
+                <!-- Menu mobile (Responsive) -->
+                <label for="menu-mobile" class="menu-mobile">Menu</label>
+                <input type="checkbox" id="menu-mobile" role="button">
+                
+                <!-- Menu -->
+                <ul>
+                    <!-- Boutons de gauche -->
+                    <li class="menu-title"><a href="./pages/accueil.html" target="f1"><strong>Faïz 🌠</strong></a></li>
+
+                    <!-- Boutons de droites -->
+                    <li class="menu-contact"><a href="./pages/contact/contact.html" target="f1">Contact</a></li>
+                    <li class="menu-veille"><a href="#" class="nolink">Veilles</a>
+                        <ul class="submenu">
+                            <li class="firstitem"><a href="./pages/veilles/tech.html" target="f1">Veille technologique</a></li>
+                            <li class="lastitem"><a href="./pages/veilles/jurid.html" target="f1">Veille juridique</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-projet"><a href="#" class="nolink">Projets</a>
+                        <ul class="submenu">
+                            <li class="firstitem"><a href="./pages/projets/stages.html" target="f1">Stages</a></li>
+                            <li><a href="./pages/projets/ppe.html" target="f1">PPE</a></li>
+                            <li class="lastitem"><a href="./pages/projets/tp.html" target="f1">TP</a></li>
+                        </ul>
+                    </li> 
+                    <li class="menu-cv"><a href="./pages/cv/cv.html" target="f1">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenu -->
+        <div>
+            <iframe src="./pages/accueil.html" name="f1" class="content" width="100%" frameborder="0" scrolling="yes"></iframe>
+              
+            <!-- Pied de page -->
+            <footer>
+                naksudev © 2021
+            </footer>
+        </div>
+
+
+	</body>
+</html>

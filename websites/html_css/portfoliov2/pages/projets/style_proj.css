@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../../assets/fonts/RobotoSlab-VariableFont_wght.ttf") format("woff2");
+}
+
+body
+{
+    color: white;
+	padding: 1em;
+    font-family: "Roboto Slab";
+}
+
+h1
+{
+    margin: auto;
+    text-align: left;
+}
+
+p 
+{
+    margin-top: 2px;
+    margin-left: 6px;
+}
+
+/* TP */
+table
+{
+    margin: auto;
+    margin-top: 18px;
+}
+
+.tp 
+{
+    background-color: #783F8E;
+    padding: 16px;
+    padding-bottom: 7vh;
+    border-radius: 4px;
+    margin-right: 26px;
+    margin-bottom: 16px;
+}
+
+.titre
+{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description
+{
+    font-size: small;
+}
+
+.fab
+{
+    float: right;
+    font-size: 18px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+/* Boutons */
+.button 
+{
+    float: right;
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.button1 
+{
+    background-color: #783F8E; 
+    color: white; 
+    border: 2px solid #4F1271;
+    border-radius: 32px;
+}
+
+.button1:hover 
+{
+    background-color: #4F1271;
+    color: white;
+}
+
+/* Stages */
+.content 
+{
+    float: left;
+    height: 180px;
+    margin-top: 12px;
+    float: left;
+    padding: 16px;
+    background-color: #4F1271;
+    border-radius: 12px;
+    width: 99%;
+}
+
+.stage 
+{
+    display: inline-block;
+    width: 20%;
+}
+
+.etr 
+{
+    font-size: x-large;
+}
+
+.description_etr 
+{
+    font-size: 11px;
+}
+
+.date 
+{
+    margin-top: -24px;
+    font-size: small;
+}
+
+.exp-div
+{
+    float: right;
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-right: 30vh;
+}
+
+.exp 
+{
+    margin-top: -12px;
+    font-size: 13px;
+}
+
+/* PPE */
+.content_ppe
+{
+    float: left;
+    height: 150px;
+    margin-top: 12px;
+    float: left;
+    padding: 16px;
+    background-color: #783F8E;
+    border-radius: 12px;
+    width: 20%;
+}
+
+.titre_ppe 
+{
+    font-size: x-large;
+}
+
+.description_ppe
+{
+    font-size: 12px;
+}
+
+.date 
+{
+    margin-top: -24px;
+    font-size: small;
+}

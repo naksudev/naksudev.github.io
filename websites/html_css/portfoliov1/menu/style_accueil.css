@@ -1,0 +1,17 @@
+body
+{
+	font-family: sans-serif;
+	background-color: #F2F5EA;
+	padding: 1em;
+}
+
+h1
+{
+	text-align: center;
+}
+
+img
+{
+	float: right;
+	margin-left: 12px;
+}
