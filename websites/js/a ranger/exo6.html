@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mix des exos 1 à 5</title>
+	<link rel="stylesheet" type="text/css" href="style_exo6.css">
+</head>
+<body>
+	<script type="text/javascript">
+		var a = String(prompt("Entrez un texte"));
+
+		document.write("<strong>Le mot saisie est : ", a, "</strong>");
+		document.write("<br>La première lettre du mot <span class=mot>", a, "</span> est : ", a.substr(0, 1), " et il se compose de ", a.length, " caractères.");
+		document.write("<br>La dernière lettre du mot <span class=mot>", a, "</span> est : ", a.substr(-1, 1))
+	</script>
+</body>
+</html>
