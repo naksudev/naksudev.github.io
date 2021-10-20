@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comptage d'espace</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var space = 0;
+        var x = prompt("Entrez une phrase");
+
+        for (let i = 1; i <= x.length; i++) {
+
+            if (x.substr(i, 1) == " ") {
+                space += 1;
+            }
+        };
+
+        document.write("Le nombre d'espace dans votre phrase est de " + space);
+    </script>
+</body>
+</html>
