@@ -45,11 +45,6 @@ ul
 	list-style: none;
 }
 
-span.nom 
-{
-
-}
-
 span.info
 {
 	font-size: 12px;
@@ -58,7 +53,6 @@ span.info
 /* >> Partie droite */
 .droite 
 {
-	display: inline-block;
 	margin-top: auto;
 	float: right;
 	padding: 14px;
@@ -71,7 +65,6 @@ span.titre
 	font-weight: bold;
 	font-size: 24px;
 	color: #969696;
-
 }
 
 /* - Contenu - */
@@ -127,11 +120,6 @@ table td input
 .inventaire tr td input 
 {
 	text-align: right;
-}
-
-.desc
-{
-	text-align: left;
 }
 
 .table_inv tr td

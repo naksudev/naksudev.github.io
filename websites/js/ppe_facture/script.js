@@ -33,19 +33,23 @@ function calculate() {
 	var t7 = parseInt(document.getElementById('t7').value=p7*q7);
 	var t8 = parseInt(document.getElementById('t8').value=p8*q8);
 	var t9 = parseInt(document.getElementById('t9').value=p9*q9);
-	const t10 = parseInt(document.getElementById('t10').value=p10*q10);
+	var t10 = parseInt(document.getElementById('t10').value=p10*q10);
+    const total = t1+t2+t3+t4+t5+t6+t7+t8+t9+t10; 
+
 	// Remise
 	const remise = parseInt(document.getElementById('r1').value);
 	// Sous-Total
-	const sousTotal = parseInt(document.getElementById('st1').value=prix*qte+remise);
+	const sousTotal = parseInt(document.getElementById('st1').value=prix*qte);
 	// Sous-Total sans les remises
-	const sT_r = parseInt(document.getElementById('st_r1').value=sousTotal-remise);
+	const sT_r = parseInt(document.getElementById('st_r1').value=sousTotal-(remise/100));
 	// Taux d'impots
 	const tauxImpots = parseInt(document.getElementById('ti1').value);
 	// Taxe totale
-	const totalTaxe = parseInt(document.getElementById('tt1').value=sousTotal+tauxImpots);
+	const totalTaxe = parseInt(document.getElementById('tt1').value=Math.round(sousTotal*(tauxImpots/100)));
 	// Solde
-	const solde = parseInt(document.getElementById('solde').value);
+	const solde = parseInt(document.getElementById('solde').value=sT_r+totalTaxe);
+    // Frais exp
+    const fraisexp = parseInt(document.getElementById('e_m1').value);
 }
 
 function access() {
