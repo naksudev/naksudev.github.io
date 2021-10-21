@@ -3,27 +3,14 @@ body
 	font-family: Verdana, Calibbri, sans-serif;
 	margin: 0px;
 	padding: 15px;
-    background-color: #101820FF;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    background-image: url(./assets/background.jpg);
+	height: 90vh;
 }
 
 nav
 {
 	width: 100%;
-	background-color: #F2AA4CFF;
+	background-color: rgb(216, 78, 78);
     border-radius: 10px;
 }
 
@@ -84,7 +71,7 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: #F2AA4CFF;
+    color: rgb(242, 76, 76);
     cursor: default;
 }
 
@@ -92,7 +79,7 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: #F2AA4CFF;
+    color: rgb(242, 76, 76);
     cursor: default;
 }
 
@@ -100,13 +87,14 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: #F2AA4CFF;
+    color: rgb(242, 76, 76);
 }
 
 .menu-source:hover a
 {
-    background-color: rgba(255, 255, 255, 0.9);
-	transition-duration: 0.1s;
+    background-color: #101820FF;
+    color: rgb(242, 76, 76);
+	transition-duration: 0.3s;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -114,26 +102,26 @@ nav > ul > li:hover a
 /* Sous-Menus */
 .menu-html_css .submenu
 {
-	background-color: rgb(35, 52, 70);
+	background-color: rgb(70, 35, 35);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .menu-js .submenu
 {
-    background-color: rgb(35, 52, 70);
+    background-color: rgb(70, 35, 35);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .menu-html_css .submenu li:hover
 {
-	background-color: rgb(24, 35, 48);
+	background-color: rgb(48, 24, 24);
 }
 
 .menu-js .submenu li:hover
 {
-	background-color: rgb(24, 35, 48);
+	background-color: rgb(48, 24, 24);
 }
 
 .submenu li a 
@@ -187,7 +175,7 @@ nav input[type=checkbox]:checked ~ ul
 	{
 		display: block;
 		color: #fff;
-		background-color: rgb(218, 153, 68);
+		background-color: rgb(165, 36, 36);
 		text-align: center;
 		padding: 12px 0;
 	}
@@ -228,11 +216,12 @@ nav input[type=checkbox]:checked ~ ul
 	}
 }
 
+/* Content */
 div
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8em;
+    margin-top: 9em;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vmax;
@@ -253,6 +242,18 @@ div
     }
 }
 
+.citation 
+{
+    font-style: italic;
+    font-size: large;
+}
+
+.author 
+{
+    font-size: small;
+}
+
+/* Icones */
 .fa-html5
 {
     color: #ff5733;
