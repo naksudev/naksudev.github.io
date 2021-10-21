@@ -57,6 +57,6 @@ function access() {
 	var password = prompt("Mot de passe", "");
 
 	if (username === "Admin_GSB" && password === "admin") {
-		document.location.href="https://www.google.com";
+		document.location.href="pdf.html";
 	}
 }
