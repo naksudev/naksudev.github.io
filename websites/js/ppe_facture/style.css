@@ -67,6 +67,11 @@ span.titre
 	color: #969696;
 }
 
+#date, #n_facture 
+{
+    text-align: center;
+}
+
 /* - Contenu - */
 .contenu 
 {
@@ -102,6 +107,11 @@ span.titre_dest
 	text-align: right;
 }
 
+.inventaire tr td input 
+{
+	text-align: right;
+}
+
 .table_inv
 {
 	height: 8em; 
@@ -117,15 +127,15 @@ table td input
 	background-color: transparent;
 }
 
-.inventaire tr td input 
-{
-	text-align: right;
-}
-
 .table_inv tr td
 {
 	border-right: 1px solid gray;
 	border-left: 1px solid gray;
+}
+
+table tr td .desc
+{
+    text-align: left;
 }
 
 .entete_inv 
