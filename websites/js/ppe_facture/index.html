@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="onload()">
 	<form>
 	<div class="facture">
 		<div class="entete">
@@ -157,7 +157,7 @@
 					<tr class="calcul" style="border-style: none;">
 						<td style="text-align: left;">Remarques, notes et instructions de paiement</td>
 						<td></td>
-						<td width="50%">SOUS-TOTAL</td>
+						<td width="540px">SOUS-TOTAL</td>
 						<td width="80px"><input type="text" name="sous-total" id="st1" class="input" value="0.00"></td>
 					</tr>
 					<tr>
@@ -209,6 +209,7 @@
 			</div>
 		</div>
 		<input type="button" value="Calculer" onclick="calculate()">
+        <input type="reset" value="Annuler">
 		<input type="button" value="Code Source" onclick="access()">
 	</div>
 	</form>

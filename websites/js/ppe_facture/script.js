@@ -1,3 +1,25 @@
+// Fonction qui se lance au chargement de la page
+function onload() {
+    // Date de la facture (maj auto) 
+    document.getElementById('date').value=formatDate(Date.now()); 
+}
+
+// Fonction qui permet de convertir la chaine de caractère de base de Date.now() en quelque chose de plus présentable.
+function formatDate(date) {
+    var d = new Date(date), month = '' + (d.getMonth() + 1), day = '' + d.getDate(), year = d.getFullYear();
+
+    if (month.length < 2) {
+        month = '0' + month;
+    }
+
+    if (day.length < 2) {
+        day = '0' + day;
+    }
+
+    return [day, month, year].join('/');
+}
+
+// Fonction qui dépend du bouton "Calculer"
 function calculate() {
 	// Prix
 	var p1 = parseInt(document.getElementById('p1').value);
@@ -52,11 +74,14 @@ function calculate() {
     const fraisexp = parseInt(document.getElementById('e_m1').value);
 }
 
+// Fonction qui dépend du bouton "Code Source"
 function access() {
 	var username = prompt("Identifiant", "");
 	var password = prompt("Mot de passe", "");
 
 	if (username === "Admin_GSB" && password === "admin") {
 		document.location.href="pdf.html";
-	}
+	} else {
+        alert("Mauvais identifiant. Veuillez réessayer.")
+    }
 }
