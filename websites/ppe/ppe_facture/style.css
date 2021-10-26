@@ -166,6 +166,18 @@ table tr td .desc
 	background-color: #e8e8e8;
 }
 
+.calcul_table 
+{
+    margin: 0 auto;
+    height: 8em; 
+    border-collapse: collapse;
+}
+
+#st1, #r1, #st_r1, #ti1, #tt1, #em_1
+{
+    border-bottom: 1px solid black ;
+}
+
 #solde 
 {
 	font-weight: bold;
