@@ -196,3 +196,9 @@ nav input[type=checkbox]:checked ~ ul
 		position: static;
 	}
 }
+
+/* Content */
+div 
+{
+    padding: 16px;
+}
