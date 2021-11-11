@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MDP V2</title>
+	<script type="text/javascript">
+		function access(){
+			var i=0
+			do{ 
+				
+				i=i+1
+				var username=prompt("Identifiant :");
+				var password=prompt("Mot de passe :");
+
+
+					if (username==="Admin_GSB" && password==="admin")
+
+					{
+						alert("Connexion réussi");
+					}
+
+					else
+					{
+						alert("Identifiant ou mot de passe incorrects");
+					}
+
+				 }
+				 while(i<3)
+				if(i==3)
+					alert("Compte bloqué");
+			}
+	</script>
+</head>
+<body>
+	<button id="acces" onclick="access()">se connecter</button>
+
+</body>
+</html>
