@@ -3,15 +3,29 @@ body
 	font-family: Verdana, Calibbri, sans-serif;
 	margin: 0px;
 	padding: 15px;
-    background-image: url(./assets/background.jpg);
-    background-size: cover;
+    background-image: var(--background-image);
+    background-position: center;
 	height: 90vh;
+}
+
+.edward
+{
+    --color-nav: rgb(131, 26, 26);
+    --background-image: url(./assets/background_ed.png);
+    --font-color: rgb(242, 76, 76);
+}
+
+.alphonse 
+{
+    --color-nav: rgb(26, 75, 131);
+    --background-image: url(./assets/background_al.png);
+    --font-color: rgb(76, 134, 242);
 }
 
 nav
 {
 	width: 100%;
-	background-image: url("https://images8.alphacoders.com/970/970376.jpg");
+	background-color: var(--color-nav);
     border-radius: 10px;
 }
 
@@ -64,7 +78,7 @@ nav > ul > li:hover a
 
 .menu-title:hover a
 {
-    color: rgb(240, 56, 56);
+    color: rgb(255, 255, 255);
     transition-duration: 0.3s;
 }
 
@@ -72,7 +86,7 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: rgb(242, 76, 76);
+    color: var(--font-color);
     cursor: default;
 }
 
@@ -80,7 +94,7 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: rgb(242, 76, 76);
+    color: var(--font-color);
     cursor: default;
 }
 
@@ -88,13 +102,13 @@ nav > ul > li:hover a
 {
 	background-color: #101820FF;
 	transition-duration: 0.3s;
-    color: rgb(242, 76, 76);
+    color: var(--font-color);
 }
 
 .menu-source:hover a
 {
     background-color: #101820FF;
-    color: rgb(242, 76, 76);
+    color: var(--font-color);
 	transition-duration: 0.3s;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
