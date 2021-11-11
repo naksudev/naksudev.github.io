@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>MDP V1</title>
+	<script type="text/javascript">
+		function access(){
+			var id = prompt("Donnez votre nom d'utilisateur");
+			var mdp = prompt("Donnez votre mot de passe");
+
+			if (id ="AdminGSB" && mdp == "Admin") 
+			{
+				document.write("Connecté");
+			}
+			else
+			{
+				alert("Acces refusé");
+			}
+		}
+	</script>
+</head>
+<body>
+    <form name="form">
+        <input type="button" name="c" onclick="access()" value="Se connecter">
+
+    </form>
+</body>
+</html>
