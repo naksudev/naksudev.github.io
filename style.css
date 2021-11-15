@@ -4,6 +4,7 @@ body
 	margin: 0px;
 	padding: 15px;
     background-image: var(--background-image);
+    
     background-position: center;
 	height: 90vh;
 }
@@ -11,14 +12,14 @@ body
 .edward
 {
     --color-nav: rgb(131, 26, 26);
-    --background-image: url(./assets/background_ed.png);
+    --background-image: url(./assets/background_ed.jpg);
     --font-color: rgb(242, 76, 76);
 }
 
 .alphonse 
 {
     --color-nav: rgb(26, 75, 131);
-    --background-image: url(./assets/background_al.png);
+    --background-image: url(./assets/background_al.jpg);
     --font-color: rgb(76, 134, 242);
 }
 
@@ -260,6 +261,12 @@ div
     animation-iteration-count: 1;
     animation-fill-mode: both;
     width: 70%;
+}
+
+footer
+{
+	position: fixed;
+	bottom: 8px;
 }
 
 @keyframes fadeInAnimation
