@@ -9,7 +9,7 @@
         <script type="text/javascript" src="script.js"></script>
         <script src="https://kit.fontawesome.com/9fde1af100.js" crossorigin="anonymous"></script>
     </head>
-	<body onload="initElement();">
+	<body onload="initElement(); setTheme(edward);">
         <header>
             <nav> 
                 <label for="menu-mobile" class="menu-mobile">Menu</label>
@@ -89,7 +89,11 @@
         </header>
 
         <div>
-            <p class="citation">“Je vis juste dans un monde trop grand , bon sang !”</p> <p class="author">-Edward Elric</p>
+            <p class="citation" style="font-size: 1vw;">“Je vis juste dans un monde trop grand , bon sang !”</p> <p class="author" style="font-size: 0.8vw;">-Edward Elric</p>
         </div>
+
+        <footer>
+            <a onclick="toggleTheme()"><img src="./assets/theme.png" height="32"></a>
+        </footer>
 	</body>
 </html>

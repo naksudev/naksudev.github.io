@@ -12,3 +12,24 @@ function initElement()
         console.log("Played sound.")
     }
 }
+
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+function toggleTheme(themeName) {
+    if (localStorage.getItem('theme') === 'edward'){
+        setTheme('alphonse');
+    } else {
+        setTheme('edward');
+    }
+}
+
+(function () {
+    if (localStorage.getItem('theme') === 'edward') {
+        setTheme('alphonse');
+    } else {
+        setTheme('edward');
+    }
+})();
