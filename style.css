@@ -1,33 +1,43 @@
+@font-face {
+    font-family: '8bit';
+    src: url(./assets/8bitoperator.ttf);
+}
+
 body
 {
-	font-family: Verdana, Calibbri, sans-serif;
+	font-family: '8bit';
+    font-size: small;
 	margin: 0px;
 	padding: 15px;
     background-image: var(--background-image);
-    
-    background-position: center;
+    background-size: cover;
+    background-position: 0px;
 	height: 90vh;
 }
 
 .edward
 {
-    --color-nav: rgb(131, 26, 26);
+    --color-nav: rgb(0, 0, 0);
     --background-image: url(./assets/background_ed.jpg);
-    --font-color: rgb(242, 76, 76);
+    --font-color: rgb(255, 255, 255);
+    --citation: "“How can you refuse when you are already playing the game?”";
+    --author: "-Jevil, DELTARUNE";
 }
 
 .alphonse 
 {
-    --color-nav: rgb(26, 75, 131);
-    --background-image: url(./assets/background_al.jpg);
-    --font-color: rgb(76, 134, 242);
+    --color-nav: rgb(0, 0, 0);
+    --background-image: url(./assets/background_ed.jpg);
+    --font-color: rgb(255, 255, 255);
+    --citation: "“WELL HAVE I GOT A DEAL FOR YOU!!”";
+    --author: "-Spamton, Deltarune";
 }
 
 nav
 {
 	width: 100%;
 	background-color: var(--color-nav);
-    border-radius: 10px;
+    border: 2px solid white;
 }
 
 nav > ul
@@ -54,6 +64,11 @@ nav > ul > li
 	position: relative;
 }
 
+nav > ul > li::before a
+{
+    content: "*";
+}
+
 nav a
 {
 	display: inline-block;
@@ -63,7 +78,7 @@ nav a
 nav > ul > li > a
 {
 	padding: 20px;
-	color: #101820FF;
+	color: rgb(255, 255, 255);
 }
 
 nav > ul > li:hover a 
@@ -85,50 +100,56 @@ nav > ul > li:hover a
 
 .menu-html_css:hover .nolink
 {
-	background-color: #101820FF;
+	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
-    cursor: default;
 }
 
 .menu-js:hover .nolink
 {
-	background-color: #101820FF;
+	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
-    cursor: default;
 }
 
 .menu-magic:hover a
 {
-	background-color: #101820FF;
+	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
 }
 
 .menu-source:hover a
 {
-    background-color: #101820FF;
+    background-color: rgb(0, 0, 0);
     color: var(--font-color);
 	transition-duration: 0.3s;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 /* Sous-Menus */
 .menu-html_css .submenu
 {
-	background-color: #101820FF;
+	background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .menu-js .submenu
 {
-    background-color: #101820FF;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .menu-js .submenu .subsubmenu
 {
-    background-color: #101820FF;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .menu-html_css .submenu li:hover
@@ -138,7 +159,7 @@ nav > ul > li:hover a
 
 .menu-js .submenu li:hover
 {
-	background-color: rgb(26, 38, 51);
+	background-color: rgb(0, 0, 0);
 }
 
 .menu-js .subsubmenu li:hover
@@ -178,10 +199,10 @@ nav li > ul > li:hover .subsubmenu
 {
 	display: inline-block;
 	position: absolute;
-	top: 0%;
-	left: 100%;
+	top: -1%;
+	left: 99%;
 	padding: 0px;
-	z-index: 100000;
+	z-index: -100000;
 }
 
 /* Mobile */
@@ -254,7 +275,6 @@ div
     margin-right: auto;
     margin-top: 9em;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vmax;
     text-align: center;
     animation: fadeInAnimation ease 2.5s;
@@ -279,15 +299,24 @@ footer
     }
 }
 
-.citation 
+.citation::before
 {
     font-style: italic;
     font-size: large;
+    content: var(--citation);
+    font-size: 1vw;
 }
 
-.author 
+.author::after
 {
     font-size: small;
+    content: var(--author);
+    font-size: 0.8vw;
+}
+
+.citation, .author 
+{
+    margin: auto;
 }
 
 /* Icones */
