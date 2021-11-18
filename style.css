@@ -11,7 +11,7 @@ body
 	padding: 15px;
     background-image: var(--background-image);
     background-size: cover;
-    background-position: 0px;
+    background-position: center;
 	height: 90vh;
 }
 
@@ -22,6 +22,7 @@ body
     --font-color: rgb(255, 255, 255);
     --citation: "“How can you refuse when you are already playing the game?”";
     --author: "-Jevil, DELTARUNE";
+    --author_img: url(./assets/Jevil.png);
 }
 
 .alphonse 
@@ -31,13 +32,15 @@ body
     --font-color: rgb(255, 255, 255);
     --citation: "“WELL HAVE I GOT A DEAL FOR YOU!!”";
     --author: "-Spamton, Deltarune";
+    --author_img: url(./assets/Spamton.png);
 }
 
 nav
 {
 	width: 100%;
 	background-color: var(--color-nav);
-    border: 2px solid white;
+    border: 3px solid white;
+
 }
 
 nav > ul
@@ -62,11 +65,6 @@ nav > ul > li
 {
 	float: left;
 	position: relative;
-}
-
-nav > ul > li::before a
-{
-    content: "*";
 }
 
 nav a
@@ -227,7 +225,7 @@ nav input[type=checkbox]:checked ~ ul
 	{
 		display: block;
 		color: #fff;
-		background-color: rgb(165, 36, 36);
+		background-color: rgb(0, 0, 0);
 		text-align: center;
 		padding: 12px 0;
 	}
@@ -237,26 +235,18 @@ nav input[type=checkbox]:checked ~ ul
         display: none;
     }
 
-    .menu-source:hover a
-    {
-        background-color: rgba(255, 255, 255, 0.9);
-        transition-duration: 0.1s;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-
 	nav ul 
 	{
 		display: none;
 	}
 
-	nav ul li, nav ul li a 
+	nav ul li, nav ul li a
 	{
 		width: 100%;
 		text-align: center;
 	}
 
-	nav ul li a, nav ul li:hover a 
+	nav ul li a, nav ul li:hover a
 	{
 		padding: 10px 0px 10px 0px;
 	}
@@ -266,6 +256,11 @@ nav input[type=checkbox]:checked ~ ul
 		display: block;
 		position: static;
 	}
+
+    .fa-github
+    {
+        visibility: hidden;
+    }
 }
 
 /* Content */
@@ -299,19 +294,17 @@ footer
     }
 }
 
-.citation::before
+.citation::after
 {
     font-style: italic;
     font-size: large;
     content: var(--citation);
-    font-size: 1vw;
 }
 
 .author::after
 {
-    font-size: small;
+    font-size: x-small;
     content: var(--author);
-    font-size: 0.8vw;
 }
 
 .citation, .author 
@@ -341,3 +334,5 @@ footer
     margin-left: 8px;
     margin-top: 1px;
 }
+
+
