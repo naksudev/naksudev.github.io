@@ -19,7 +19,7 @@ body
 {
     --color-nav: rgb(0, 0, 0);
     --background-image: url(./assets/background_ed.gif);
-    --font-color: rgb(255, 255, 255);
+    --font-color: rgb(255, 255, 0);
     --citation: "“How can you refuse when you are already playing the game?”";
     --author: "-Jevil, DELTARUNE";
     --author_img: url(./assets/Jevil.png);
@@ -29,7 +29,7 @@ body
 {
     --color-nav: rgb(0, 0, 0);
     --background-image: url(./assets/background_ed.gif);
-    --font-color: rgb(255, 255, 255);
+    --font-color: rgb(255, 255, 0);
     --citation: "“WELL HAVE I GOT A DEAL FOR YOU!!”";
     --author: "-Spamton, Deltarune";
     --author_img: url(./assets/Spamton.png);
@@ -40,7 +40,6 @@ nav
 	width: 100%;
 	background-color: var(--color-nav);
     border: 3px solid white;
-
 }
 
 nav > ul
@@ -92,40 +91,36 @@ nav > ul > li:hover a
 
 .menu-title:hover a
 {
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     transition-duration: 0.3s;
 }
 
-.menu-html_css:hover .nolink
+.menu-main:hover .nolink
 {
-	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
 }
 
-.menu-js:hover .nolink
+.menu-subsubmenu:hover .nolink
 {
-	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
 }
 
 .menu-magic:hover a
 {
-	background-color: rgb(0, 0, 0);
 	transition-duration: 0.3s;
     color: var(--font-color);
 }
 
 .menu-source:hover a
 {
-    background-color: rgb(0, 0, 0);
     color: var(--font-color);
 	transition-duration: 0.3s;
 }
 
 /* Sous-Menus */
-.menu-html_css .submenu
+.menu-main .submenu
 {
 	background-color: rgb(0, 0, 0);
     border-bottom: 2px solid white;
@@ -133,7 +128,7 @@ nav > ul > li:hover a
     border-right: 2px solid white;
 }
 
-.menu-js .submenu
+.menu-subsubmenu .submenu
 {
     background-color: rgb(0, 0, 0);
     border-bottom: 2px solid white;
@@ -141,7 +136,7 @@ nav > ul > li:hover a
     border-right: 2px solid white;
 }
 
-.menu-js .submenu .subsubmenu
+.menu-subsubmenu .submenu .subsubmenu
 {
     background-color: rgb(0, 0, 0);
     border-bottom: 2px solid white;
@@ -150,22 +145,23 @@ nav > ul > li:hover a
     border-right: 2px solid white;
 }
 
-.menu-html_css .submenu li:hover
+.menu-main .submenu li:hover a
 {
-	background-color: rgb(0, 0, 0);
+    color: var(--font-color);
 }
 
-.menu-js .submenu li:hover
+.menu-subsubmenu .submenu li:hover > a
 {
-	background-color: rgb(0, 0, 0);
+    color: var(--font-color);
+    border-right: 4px solid black;
 }
 
-.menu-js .subsubmenu li:hover
+.menu-subsubmenu .subsubmenu li:hover a
 {
-	background-color: rgb(0, 0, 0);
+    color: var(--font-color);
 }
 
-.submenu li a 
+.submenu li a
 {
 	padding: 15px 30px;
 	font-size: 13px;
@@ -303,7 +299,7 @@ footer
 
 .author::after
 {
-    font-size: x-small;
+    font-size: small;
     content: var(--author);
 }
 
@@ -315,16 +311,19 @@ footer
 /* Icones */
 .fa-html5
 {
+    margin-top: 1px;
     color: #ff5733;
 }
 
 .fa-css3-alt
 {
+    margin-top: 1px;
     color: #338dff;
 }
 
 .fa-js-square
 {
+    margin-top: 1px;
     color: rgb(255, 187, 0);
 }
 
