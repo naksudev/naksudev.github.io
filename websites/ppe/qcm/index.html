@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quizz - Pokémon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h2>Quizz - Pokémon</h2>
+
+	<div class="qcm">
+		<form id="form_qcm">
+			<ul class="q1">
+				<p><span class="gras">Question 1 :</span> Combien de pokémons sont présents dans la première génération ?</p>
+				<li><input type="radio" class="choix answer" id="q1_r1" name="q1r">151</li>
+				<li><input type="radio" class="choix" id="q1_r2" name="q1r">152</li>
+				<li><input type="radio" class="choix" id="q1_r3" name="q1r">56</li>
+                <li><input type="radio" class="choix" id="q1_r4" name="q1r">87</li>
+			</ul>
+
+			<ul class="q2">
+				<p><span class="gras">Question 2 :</span> Quel est le nom du premier remake de Pokemon  ?</p>
+				<li><input type="radio" class="choix" id="q2_r1" name="q2r">Or Heartgold & Argent Soulsilver</li>
+				<li><input type="radio" class="choix answer" id="q2_r2" name="q2r">Rouge Feu & Vert Feuille</li>
+				<li><input type="radio" class="choix" id="q2_r3" name="q2r">Rubis Oméga & Saphir Alpha</li>
+			</ul>
+
+			<ul class="q3">
+				<p><span class="gras">Question 3 :</span> Quel est la chance d'avoir un Shiny dans la 4e génération des jeux Pokémon ?</p>
+				<li><input type="radio" class="choix" id="q3_r1" name="q3r">1/4092</li>
+				<li><input type="radio" class="choix answer" id="q3_r2" name="q3r">1/8192</li>
+				<li><input type="radio" class="choix" id="q3_r3" name="q3r">1/2048</li>
+			</ul>
+
+            <ul class="q4">
+				<p><span class="gras">Question 4 :</span> Est-ce que les pokémons shiny/chromatiques ont des statistiques plus elevés que les pokémons normaux ?</p>
+				<li><input type="radio" class="choix" id="q4_r1" name="q4r">Oui</li>
+				<li><input type="radio" class="choix answer" id="q4_r2" name="q4r">Non</li>
+			</ul>
+
+            <ul class="q5">
+				<p><span class="gras">Question 5 :</span> Comment s'appelle l'objet avec lequel on peut changer la forme Giratina ?</p>
+				<li><input type="radio" class="choix answer" id="q5_r1" name="q5r">Orbe Platiné</li>
+				<li><input type="radio" class="choix" id="q5_r2" name="q5r">Orbe Perlé</li>
+				<li><input type="radio" class="choix" id="q5_r3" name="q5r">Orbe Adamant</li>
+                <li><input type="radio" class="choix" id="q5_r4" name="q5r">Orbe des Liens</li>
+			</ul>
+
+            <ul class="q6">
+				<p><span class="gras">Question 6 :</span> Qui est, d'après la commmunauté, le dresseur le plus puissant de la saga Pokémon ?</p>
+				<li><input type="radio" class="choix" id="q6_r1" name="q6r">Professeur Chen</li>
+				<li><input type="radio" class="choix" id="q6_r2" name="q6r">Luth</li>
+				<li><input type="radio" class="choix answer" id="q6_r3" name="q6r">Red</li>
+			</ul>
+            
+            <ul class="q7">
+				<p><span class="gras">Question 7 :</span> Qu'est-ce que le Pokérus ?</p>
+				<li><input type="radio" class="choix" id="q7_r1" name="q7r">Une variante du covid</li>
+				<li><input type="radio" class="choix answer" id="q7_r2" name="q7r">Un virus bénéfique pour les Pokémons</li>
+				<li><input type="radio" class="choix" id="q7_r3" name="q7r">Un pokémon dinosaure</li>
+			</ul9
+            <ul class="q8">
+				<p><span class="gras">Question 8 :</span> Quel est le record du prix de la carte Pokémon "Dracafeu" ?</p>
+				<li><input type="radio" class="choix answer" id="q8_r1" name="q8r">506,969$</li>
+				<li><input type="radio" class="choix" id="q8_r2" name="q8r">405,102$</li>
+				<li><input type="radio" class="choix" id="q8_r3" name="q8r">904,230$</li>
+			</ul>
+
+            <ul class="q9">
+				<p><span class="gras">Question 9 :</span> Quel est le nom du Pokémon bugué le plus connu ?</p>
+				<li><input type="radio" class="choix" id="q9_r1" name="q9r">PkMn</li>
+				<li><input type="radio" class="choix answer" id="q9_r2" name="q9r">MissingNo.</li>
+				<li><input type="radio" class="choix" id="q9_r3" name="q9r">◣ゥ 8</li>
+			</ul>
+
+            <ul class="q10">
+				<p><span class="gras">Question 10 :</span> Quel effet de talent est vrai ?</p>
+				<li><input type="radio" class="choix" id="q10_r1" name="q10r">Anticipation alerte de Lyophilisation si le possesseur du talent est de type Eau</li>
+				<li><input type="radio" class="choix answer" id="q10_r2" name="q10r">Normalise multiplie la puissance des attaques par 1.2</li>
+				<li><input type="radio" class="choix" id="q10_r3" name="q10r">Boost Acier augmente la défense des Pokémons alliés de type Acier</li>
+			</ul>
+
+			<input type="button" id="correction" value="Correction" onclick="document.location.href='correction.html';">
+			<input type="reset" id="effacer" value="Effacer">
+			<input type="button" id="corriger" value="Valider" onclick="valider()">
+		</form>
+	</div>
+</body>
+</html>

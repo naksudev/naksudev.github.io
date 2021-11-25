@@ -1,0 +1,46 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    background-color: #001011;
+    color: #3AAFB9;
+}
+
+h2 
+{
+    margin: auto 0;
+    width: 100%;
+    color: #64E9EE;
+}
+
+ul
+{
+	list-style: none;
+}
+
+li 
+{
+    color: #64E9EE;
+}
+
+ul > li > input 
+{
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+}
+
+/* Boutons */
+
+
+/* Divers */
+span.gras 
+{
+	font-weight: bold;
+}
+
+span.correction
+{
+	font-weight: bold;
+	color: lightgreen;
+}
