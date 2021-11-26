@@ -29,7 +29,7 @@ li
     color: #64E9EE;
 }
 
-ul > li > input 
+ul > li > input, ul > li
 {
 	margin-right: 1em;
 	margin-bottom: 0.5em;
