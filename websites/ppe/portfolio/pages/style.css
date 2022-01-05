@@ -18,7 +18,7 @@ h1
 p 
 {
     margin-top: -10px;
-    margin-left: 6px;
+    margin-left: 1px;
 }
 
 span.truc 
@@ -39,7 +39,8 @@ div
 
 img
 {
-	float: right;
+    padding: 80px;
+	float: left;
 	margin-left: 12px;
     margin-top: 24px;
 }
