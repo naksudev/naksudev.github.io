@@ -20,8 +20,8 @@ body
     --color-nav: rgb(0, 0, 0);
     --background-image: url(./assets/img/background_ed.gif);
     --font-color: rgb(255, 255, 0);
-    --citation: "“How can you refuse when you are already playing the game?”";
-    --author: "-Jevil, DELTARUNE";
+    --citation: "“Etudiant en première année de BTS SIO”";
+    --author: "-Faïz";
 }
 
 .alphonse 
@@ -29,8 +29,8 @@ body
     --color-nav: rgb(0, 0, 0);
     --background-image: url(./assets/img/background_ed.gif);
     --font-color: rgb(255, 255, 0);
-    --citation: "“WELL HAVE I GOT A DEAL FOR YOU!!”";
-    --author: "-Spamton, Deltarune";
+    --citation: "“Les attentes donnent le vertige”";
+    --author: "-Toby Fox";
 }
 
 nav
@@ -191,7 +191,7 @@ nav li > ul > li:hover .subsubmenu
 {
 	display: inline-block;
 	position: absolute;
-	top: -1%;
+	top: 0%;
 	left: 99%;
 	padding: 0px;
 	z-index: -100000;

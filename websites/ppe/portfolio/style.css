@@ -192,7 +192,7 @@ nav input[type=checkbox]:checked ~ ul
 	{
 		display: block;
 		color: #fff;
-		background-color: rgb(218, 153, 68);
+		background-color: rgb(146, 68, 218);
 		text-align: center;
 		padding: 12px 0;
 	}
@@ -243,8 +243,8 @@ div
 
 .content
 {
-    height: 100vh;
     width: 100%;
+    height: 90vh;
 }
 
 @keyframes fadeInAnimation
@@ -260,7 +260,7 @@ div
 footer
 {
     font-size: small;
-    margin-bottom: 24px;
+    padding: 18px;
     color: #384255; 
 }
 
